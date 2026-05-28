@@ -1,4 +1,9 @@
-## Hi there 👋
+> There is a Moment in each Day that Satan cannot find  
+> Nor can his Watch Fiends find it, but the Industrious find  
+> This Moment & it multiply, & when it once is found  
+> It Renovates every Moment of the Day if rightly placed
+>
+> -- *The Prophetic Books of William Blake: Jerusalem*
 
 <!--
 **Igazine/Igazine** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
