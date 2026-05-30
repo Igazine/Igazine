@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A living map of portable systems, language experiments, plugin surfaces, binary data work, and cross-platform software by Igazine.">
+    <meta name="theme-color" content="#061115">
+    <title>Systems Across Boundaries | Igazine</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Home">digigun.net</a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#map">Map</a>
+        <a href="#artifacts">Artifacts</a>
+        <a href="#principles">Principles</a>
+        <a href="#links">Links</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="map">
+        <div class="hero-copy">
+          <h1>Systems across boundaries.</h1>
+          <p>I work where software has to move between platforms, runtimes, languages, protocols, file formats, older technologies, and precise human workflows.</p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#artifacts">View artifacts</a>
+            <a class="button secondary" href="https://github.com/Igazine" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="map-panel" aria-label="Technical boundary map">
+          <div class="axis horizontal" aria-hidden="true"></div>
+          <div class="axis vertical" aria-hidden="true"></div>
+          <a class="map-node node-platforms" href="#platforms">
+            <span>Platforms</span>
+            <strong>Apps / Games</strong>
+          </a>
+          <a class="map-node node-legacy" href="#legacy">
+            <span>Legacy</span>
+            <strong>Ports</strong>
+          </a>
+          <a class="map-node node-language" href="#language">
+            <span>Languages</span>
+            <strong>Runtime Ideas</strong>
+          </a>
+          <a class="map-node node-api" href="#api">
+            <span>Interfaces</span>
+            <strong>Plugins / APIs</strong>
+          </a>
+          <a class="map-node node-data" href="#data">
+            <span>Bytes</span>
+            <strong>Formats / Compression</strong>
+          </a>
+          <a class="map-node node-service" href="#service">
+            <span>Systems</span>
+            <strong>CLI / Services</strong>
+          </a>
+          <div class="signal-line l1" aria-hidden="true"></div>
+          <div class="signal-line l2" aria-hidden="true"></div>
+          <div class="signal-line l3" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section lines">
+        <div class="section-heading">
+          <h2>Active lines of work</h2>
+          <p>Not a biography. A map of the systems I am building, porting, studying, or designing toward.</p>
+        </div>
+        <div class="line-grid">
+          <article id="platforms">
+            <span>01</span>
+            <h3>Cross-platform applications and games</h3>
+            <p>Shared codebases for desktop, browser, mobile, and 2D game targets, with portability treated as a design constraint from the start.</p>
+          </article>
+          <article id="legacy">
+            <span>02</span>
+            <h3>Legacy ports and modernization</h3>
+            <p>Moving software from rigid or abandoned systems into modern stacks while preserving behavior, intent, and maintainability.</p>
+          </article>
+          <article id="service">
+            <span>03</span>
+            <h3>Services, protocols, and tools</h3>
+            <p>Terminal applications, custom servers, protocol logic, build systems, automation, and focused utilities for specific needs.</p>
+          </article>
+          <article id="language">
+            <span>04</span>
+            <h3>Languages and embeddable runtimes</h3>
+            <p>Programming language design, scripting runtimes, parsers, interpreters, host interfaces, and the concepts that make tools expressive.</p>
+          </article>
+          <article id="api">
+            <span>05</span>
+            <h3>Plugin systems and API surfaces</h3>
+            <p>Contracts between host applications and extensions, with attention to capability boundaries, stability, and developer experience.</p>
+          </article>
+          <article id="data">
+            <span>06</span>
+            <h3>Binary data and transformation</h3>
+            <p>Bytes, codecs, compressors, file formats, image and audio representation, and the mechanics of lossless transformation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section artifacts" id="artifacts">
+        <div class="section-heading">
+          <h2>Artifacts</h2>
+          <p>Highlighted by current relevance, not by age. Each artifact marks a boundary I am actively working across.</p>
+        </div>
+        <div class="artifact-list">
+          <article class="artifact">
+            <div>
+              <p class="status fresh">Fresh</p>
+              <h3><a href="https://github.com/Igazine/hank" rel="noreferrer">hank</a></h3>
+              <p class="artifact-copy">My newest language experiment: part scripting language, part automation surface, part attempt to make machine work feel closer to human intent. Hank is where I am testing how a language can guide workflows instead of merely executing instructions.</p>
+            </div>
+            <dl>
+              <div>
+                <dt>Area</dt>
+                <dd>Language design / Automation</dd>
+              </div>
+              <div>
+                <dt>Evidence</dt>
+                <dd>Language philosophy, workflow semantics, <a href="https://igazine.github.io/hank-docs/guide/philosophy" rel="noreferrer">design notes</a></dd>
+              </div>
+            </dl>
+          </article>
+          <article class="artifact">
+            <div>
+              <p class="status">Current</p>
+              <h3><a href="https://github.com/Igazine/digigun.sys.hx" rel="noreferrer">digigun.sys.hx</a></h3>
+              <p class="artifact-copy">The heavy machinery under the portable-code idea. This is the kind of foundation I want available when Haxe code needs to stop being abstract and start dealing with the actual host system without giving up cross-target reach.</p>
+            </div>
+            <dl>
+              <div>
+                <dt>Area</dt>
+                <dd>Cross-platform systems</dd>
+              </div>
+              <div>
+                <dt>Evidence</dt>
+                <dd>Host capabilities, system abstractions, portable architecture</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="artifact">
+            <div>
+              <p class="status">Current</p>
+              <h3><a href="https://github.com/Igazine/digigun.scripting.hx" rel="noreferrer">digigun.scripting.hx</a></h3>
+              <p class="artifact-copy">A bridge between host applications and small embeddable languages. <a href="https://wren.io" rel="noreferrer">Wren</a> is the first working engine; <a href="https://www.gravity-lang.org" rel="noreferrer">Gravity</a> and Haxiom are waiting until the architecture feels right enough to support more than a demo.</p>
+            </div>
+            <dl>
+              <div>
+                <dt>Area</dt>
+                <dd>Embeddable scripting</dd>
+              </div>
+              <div>
+                <dt>Evidence</dt>
+                <dd>Runtime embedding, language hosting, interpreter boundaries</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="artifact">
+            <div>
+              <p class="status">Current</p>
+              <h3><a href="https://github.com/Igazine/digigun.formats.hx" rel="noreferrer">digigun.formats.hx</a></h3>
+              <p class="artifact-copy">A practical answer to formats everybody uses and nobody enjoys fighting. YAML, TOML, HCL, and similar text formats deserve safer handling than fragile glue code and one-off parsers.</p>
+            </div>
+            <dl>
+              <div>
+                <dt>Area</dt>
+                <dd>Data formats</dd>
+              </div>
+              <div>
+                <dt>Evidence</dt>
+                <dd>Parsing, structured representation, target portability</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="artifact">
+            <div>
+              <p class="status">Current</p>
+              <h3><a href="https://github.com/Igazine/digigun.compress.hx" rel="noreferrer">digigun.compress.hx</a></h3>
+              <p class="artifact-copy">Compression is one of those places where software becomes physical: streams, bytes, windows, dictionaries, tradeoffs. This library brings those algorithms into pure Haxe so they can travel wherever Haxe can compile.</p>
+            </div>
+            <dl>
+              <div>
+                <dt>Area</dt>
+                <dd>Compression / Bytes</dd>
+              </div>
+              <div>
+                <dt>Evidence</dt>
+                <dd>Deflate, LZ4, Gzip, Snappy, Brotli in progress</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="artifact">
+            <div>
+              <p class="status">Current</p>
+              <h3><a href="https://github.com/Igazine/digigun.virt.hx" rel="noreferrer">digigun.virt.hx</a></h3>
+              <p class="artifact-copy">A control surface for machines inside machines. The goal is to make virtualization systems scriptable from Haxe, whether the boundary is a native API, a local protocol, a fifo, or a Unix domain socket.</p>
+            </div>
+            <dl>
+              <div>
+                <dt>Area</dt>
+                <dd>Virtualization / Systems</dd>
+              </div>
+              <div>
+                <dt>Evidence</dt>
+                <dd>VirtualBox, Docker surfaces, Apple containers and Libvirt planned</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="section principles" id="principles">
+        <h2>Operating principles</h2>
+        <ol>
+          <li>Prefer portable logic over platform silos.</li>
+          <li>Treat APIs and plugins as contracts, not afterthoughts.</li>
+          <li>Keep old systems understandable before replacing them.</li>
+          <li>Design tools around real workflows, not generic abstractions.</li>
+          <li>Use AI as an amplifier while preserving human-led architecture.</li>
+        </ol>
+      </section>
+
+      <section class="section links" id="links">
+        <div>
+          <h2>Links</h2>
+          <p>The repository list is the raw archive. This page is the curated map.</p>
+        </div>
+        <div class="link-actions">
+          <a class="button primary" href="https://github.com/Igazine" rel="noreferrer">GitHub</a>
+          <a class="button secondary" href="https://github.com/Igazine/Igazine" rel="noreferrer">Profile source</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Igazine / digigun.net</p>
+    </footer>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
