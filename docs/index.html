@@ -9,28 +9,36 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <div class="page-frame" aria-hidden="true"></div>
     <header class="site-header" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Home">digigun.net</a>
+      <a class="brand" href="#top" aria-label="Home"><span>&gt;</span> digigun.net</a>
       <nav class="nav-links" aria-label="Sections">
-        <a href="#map">Map</a>
-        <a href="#artifacts">Artifacts</a>
-        <a href="#principles">Principles</a>
-        <a href="#links">Links</a>
+        <a href="#map">[map]</a>
+        <a href="#artifacts">[artifacts]</a>
+        <a href="#principles">[principles]</a>
+        <a href="#links">[links]</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" id="map">
         <div class="hero-copy">
+          <p class="system-label">// portable systems / language experiments / byte-level work</p>
           <h1>Systems across boundaries.</h1>
           <p>I work where software has to move between platforms, runtimes, languages, protocols, file formats, older technologies, and precise human workflows.</p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#artifacts">View artifacts</a>
             <a class="button secondary" href="https://github.com/Igazine" rel="noreferrer">GitHub</a>
           </div>
+          <p class="coordinate-line"><span></span> remote-first / Europe / code as portable material</p>
         </div>
 
         <div class="map-panel" aria-label="Technical boundary map">
+          <div class="map-header">
+            <span>// systems map</span>
+            <span>realms and connections</span>
+          </div>
+          <div class="byte-rain" aria-hidden="true">101001011010010110100101101001011010010110100101</div>
           <div class="axis horizontal" aria-hidden="true"></div>
           <div class="axis vertical" aria-hidden="true"></div>
           <a class="map-node node-platforms" href="#platforms">
@@ -60,6 +68,8 @@
           <div class="signal-line l1" aria-hidden="true"></div>
           <div class="signal-line l2" aria-hidden="true"></div>
           <div class="signal-line l3" aria-hidden="true"></div>
+          <div class="map-core" aria-hidden="true"></div>
+          <p class="map-footer">// all systems, one codebase</p>
         </div>
       </section>
 
@@ -109,10 +119,16 @@
         </div>
         <div class="artifact-list">
           <article class="artifact">
+            <div class="artifact-code">DGN-HNK</div>
             <div>
               <p class="status fresh">Fresh</p>
               <h3><a href="https://github.com/Igazine/hank" rel="noreferrer">hank</a></h3>
               <p class="artifact-copy">My newest language experiment: part scripting language, part automation surface, part attempt to make machine work feel closer to human intent. Hank is where I am testing how a language can guide workflows instead of merely executing instructions.</p>
+              <ul class="tag-list" aria-label="Project tags">
+                <li>Language design</li>
+                <li>DSL</li>
+                <li>Automation</li>
+              </ul>
             </div>
             <dl>
               <div>
@@ -126,10 +142,16 @@
             </dl>
           </article>
           <article class="artifact">
+            <div class="artifact-code">DGN-SYS</div>
             <div>
               <p class="status">Current</p>
               <h3><a href="https://github.com/Igazine/digigun.sys.hx" rel="noreferrer">digigun.sys.hx</a></h3>
               <p class="artifact-copy">The heavy machinery under the portable-code idea. This is the kind of foundation I want available when Haxe code needs to stop being abstract and start dealing with the actual host system without giving up cross-target reach.</p>
+              <ul class="tag-list" aria-label="Project tags">
+                <li>Haxe</li>
+                <li>Systems</li>
+                <li>Portable foundation</li>
+              </ul>
             </div>
             <dl>
               <div>
@@ -143,10 +165,16 @@
             </dl>
           </article>
           <article class="artifact">
+            <div class="artifact-code">DGN-SCR</div>
             <div>
               <p class="status">Current</p>
               <h3><a href="https://github.com/Igazine/digigun.scripting.hx" rel="noreferrer">digigun.scripting.hx</a></h3>
               <p class="artifact-copy">A bridge between host applications and small embeddable languages. <a href="https://wren.io" rel="noreferrer">Wren</a> is the first working engine; <a href="https://www.gravity-lang.org" rel="noreferrer">Gravity</a> and Haxiom are waiting until the architecture feels right enough to support more than a demo.</p>
+              <ul class="tag-list" aria-label="Project tags">
+                <li>Wren</li>
+                <li>Gravity</li>
+                <li>Haxiom</li>
+              </ul>
             </div>
             <dl>
               <div>
@@ -160,10 +188,16 @@
             </dl>
           </article>
           <article class="artifact">
+            <div class="artifact-code">DGN-FMT</div>
             <div>
               <p class="status">Current</p>
               <h3><a href="https://github.com/Igazine/digigun.formats.hx" rel="noreferrer">digigun.formats.hx</a></h3>
               <p class="artifact-copy">A practical answer to formats everybody uses and nobody enjoys fighting. YAML, TOML, HCL, and similar text formats deserve safer handling than fragile glue code and one-off parsers.</p>
+              <ul class="tag-list" aria-label="Project tags">
+                <li>YAML</li>
+                <li>TOML</li>
+                <li>HCL</li>
+              </ul>
             </div>
             <dl>
               <div>
@@ -177,10 +211,16 @@
             </dl>
           </article>
           <article class="artifact">
+            <div class="artifact-code">DGN-CMP</div>
             <div>
               <p class="status">Current</p>
               <h3><a href="https://github.com/Igazine/digigun.compress.hx" rel="noreferrer">digigun.compress.hx</a></h3>
               <p class="artifact-copy">Compression is one of those places where software becomes physical: streams, bytes, windows, dictionaries, tradeoffs. This library brings those algorithms into pure Haxe so they can travel wherever Haxe can compile.</p>
+              <ul class="tag-list" aria-label="Project tags">
+                <li>Deflate</li>
+                <li>LZ4</li>
+                <li>Brotli</li>
+              </ul>
             </div>
             <dl>
               <div>
@@ -194,10 +234,16 @@
             </dl>
           </article>
           <article class="artifact">
+            <div class="artifact-code">DGN-VRT</div>
             <div>
               <p class="status">Current</p>
               <h3><a href="https://github.com/Igazine/digigun.virt.hx" rel="noreferrer">digigun.virt.hx</a></h3>
               <p class="artifact-copy">A control surface for machines inside machines. The goal is to make virtualization systems scriptable from Haxe, whether the boundary is a native API, a local protocol, a fifo, or a Unix domain socket.</p>
+              <ul class="tag-list" aria-label="Project tags">
+                <li>VirtualBox</li>
+                <li>Docker</li>
+                <li>Libvirt</li>
+              </ul>
             </div>
             <dl>
               <div>
@@ -211,6 +257,23 @@
             </dl>
           </article>
         </div>
+      </section>
+
+      <section class="section toolchain">
+        <div>
+          <h2>Toolchain gravity</h2>
+          <p>Languages and systems are tools. The recurring pattern is portability, extension points, byte-level representation, and workflow leverage.</p>
+        </div>
+        <ul>
+          <li>Haxe</li>
+          <li>OpenFL</li>
+          <li>Pixi.js</li>
+          <li>Wren</li>
+          <li>Gravity</li>
+          <li>Docker</li>
+          <li>VirtualBox</li>
+          <li>GitHub Pages</li>
+        </ul>
       </section>
 
       <section class="section principles" id="principles">
